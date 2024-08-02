@@ -2,6 +2,8 @@ import React from 'react'
 import Section from './Section'
 import { smallSphere, stars } from '../assets'
 import Heading from './Heading'
+import PricingList from './PricingList'
+import {LeftLine,RightLine} from './design/Pricing'
 
 const Pricing = () => {
   return (
@@ -17,6 +19,12 @@ const Pricing = () => {
         tag="Get Started with Brainwave"
         title="Pay once, use forever"
         />
+        <div className='relative '>
+            <PricingList/>
+            <LeftLine/>
+            <RightLine/>
+            
+        </div>
     </div>
 
    </Section>
